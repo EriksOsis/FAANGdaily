@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 6rem;
+    align-items: center;
+    background-color: #131722;
+}
+
+.menu-options {
+    display: flex;
+    flex-direction: row;
+    padding: 0 3rem;
+    list-style: none;
+}
+
+.menu-option {
+    font-size: 1.6rem;
+    padding: 0 1rem 1.8rem;
+    text-decoration: none;
+    color: #d1d4dc;
+    transition: .3s;
+}
+
+.menu-option:hover,
+.menu-option:active,
+.menu-option.active {
+    color: #2962ff;
+    border-bottom: .2rem solid #2962ff;
+}
+
+.logo {
+
+}

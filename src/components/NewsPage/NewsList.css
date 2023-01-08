@@ -1,0 +1,55 @@
+.article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.article-item {
+    background-color: #131722;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: .8rem;
+    width: 80vw;
+    border-radius: 9px;
+    animation: appear-up 1s;
+}
+
+@keyframes appear-up {
+    from {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.article-headline {
+    text-decoration: none;
+    color: #d1d4dc;
+    font-size: 2.4rem;
+}
+
+.article-thumbnail {
+    width: 40rem;
+    height: auto;
+    border-radius: 9px;
+}
+
+.article-summary {
+    font-size: 1.6rem;
+}
+
+.article-source {
+    font-size: .8rem;
+    margin: 0;
+}
+
+.article-datetime {
+    font-size: .8rem;
+    margin: 0;
+}

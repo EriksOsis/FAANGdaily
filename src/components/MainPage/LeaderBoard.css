@@ -1,0 +1,77 @@
+.container {
+    margin: 1rem 3rem 0;
+    padding: 8rem 0 10rem;
+    width: auto;
+    height: auto;
+    background-color: #131722;
+    display: grid;
+    place-items: center;
+    border-radius: 9px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.cards div {
+    border-radius: 9px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.cards div:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.item1 {
+    background-image: linear-gradient(to right bottom, #000000, #050505, #0a0a0a, #0e0e0e, #121212);
+}
+
+.item2 {
+    background-image: linear-gradient(to right bottom, #181818, #141414, #0e0e0e, #080808, #000000);
+}
+
+.item2 .title {
+    font-family: 'Bebas Neue', serif;
+    color: #E50914;
+}
+
+.item3 {
+    background: #f6f6f6;
+}
+
+.item3 .title {
+    font-family: 'Roboto', serif;
+    color: #0668E1;
+}
+
+.item3 .price {
+    color: #0668E1;
+    font-family: 'Roboto', serif;
+}
+
+.item4 {
+    background: #EEEEEE;
+}
+
+.item4 .title {
+    color: #333;
+    font-family: 'Product Sans', serif;
+}
+
+.item4 .price {
+    color: #333;
+}
+
+.item5 {
+    background: #000000;
+}
+
+.item5 .title {
+    font-family: 'Amazon Ember', sans-serif;
+    color: #FF9900;
+}
+
