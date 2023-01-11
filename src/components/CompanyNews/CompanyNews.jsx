@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
 import {NewsList} from "../NewsPage/NewsList";
 import {useParams} from "react-router-dom";
+import {PageTitle} from "../UI/PageTitle";
+import NewspaperIcon from "@mui/icons-material/Newspaper";
 
 export function CompanyNews() {
     const [articles, setArticles] = useState([]);
@@ -19,6 +21,8 @@ export function CompanyNews() {
 
     return (
         <div>
+            <PageTitle h1={<h1>Market News <NewspaperIcon fontSize={"large"}/></h1>}
+                       p={<p>Most relevant {params.symbol} news</p>}/>
             <NewsList articles={articles}/>
         </div>
     )

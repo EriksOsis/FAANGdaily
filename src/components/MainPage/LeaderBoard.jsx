@@ -1,5 +1,6 @@
 import {StockCard} from "./StockCard";
 import './LeaderBoard.css';
+import {Newsletter} from "../Newsletter/Newsletter";
 
 export function LeaderBoard() {
     return (
@@ -20,6 +21,9 @@ export function LeaderBoard() {
                 <div className={'item5'}>
                     <StockCard symbol={'GOOGL'}/>
                 </div>
+            </div>
+            <div>
+                <Newsletter/>
             </div>
         </div>
     )

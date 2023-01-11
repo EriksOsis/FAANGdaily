@@ -5,6 +5,7 @@
     height: auto;
     background-color: #131722;
     display: grid;
+    gap: 10rem;
     place-items: center;
     border-radius: 9px;
 }

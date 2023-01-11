@@ -6,6 +6,7 @@ import {NewsPage} from "./components/NewsPage/NewsPage";
 import {TrendsPage} from "./components/TrendsPage/TrendsPage";
 import {InsiderPage} from "./components/InsiderPage/InsiderPage";
 import {CompanyNews} from "./components/CompanyNews/CompanyNews";
+import {Footer} from "./components/UI/Footer";
 
 function App() {
     return (
@@ -31,6 +32,7 @@ function App() {
                 <Route path={'/insider-info'} exact>
                     <InsiderPage/>
                 </Route>
+                <Footer/>
             </div>
         </Switch>
     );

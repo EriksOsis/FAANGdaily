@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import './StockCard.css';
 import MovingIcon from '@mui/icons-material/Moving';
+import CandlestickChartIcon from '@mui/icons-material/CandlestickChart';
 import {Link} from "react-router-dom";
 
 export function StockCard(props) {
@@ -43,11 +44,11 @@ export function StockCard(props) {
                 </div>
                 <div className={'card-bottom'}>
                     <p className={`percent ${numbers.dp < 0 ? 'red' : 'green'}`}>
-                        <MovingIcon fontSize={"medium"}
-                                    className={`trend-icon ${numbers.dp < 0 && 'rotate'}`}/> {numbers.dp}%
+                        <MovingIcon fontSize={"medium"} className={numbers.dp < 0 && 'rotate'}/> {numbers.dp}%
                     </p>
-                    <p className={'high green'}>Today`s high: ${numbers.h}</p>
-                    <p className={'low red'}>Today`s low: ${numbers.l}</p>
+                    <p className={'high green'}><CandlestickChartIcon fontSize={"medium"}/> Today`s high: ${numbers.h}
+                    </p>
+                    <p className={'low red'}><CandlestickChartIcon fontSize={"medium"}/> Today`s low: ${numbers.l}</p>
                     <Link to={`/company-news/${props.symbol}`} className={'company-news-link'}>{stock.name} news</Link>
                 </div>
             </div>
