@@ -1,0 +1,32 @@
+.trend-page {
+    display: grid;
+    place-items: center;
+}
+
+.trend-content {
+    background-color: #131722;
+    width: 75vw;
+    padding: 2rem;
+    border-radius: 9px;
+    display: grid;
+    place-items: center;
+}
+
+#filled-basic {
+    color: #d1d4dc;
+}
+
+#filled-basic:focus,
+#filled-basic:hover {
+    background-color: #313a52;
+}
+
+.trend-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.form-button {
+    max-height: 4.5rem;
+}

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {NewsList} from './NewsList';
-import './NewsPage.css';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
+import {PageTitle} from "../UI/PageTitle";
 
 export function NewsPage() {
     const [articles, setArticles] = useState([]);
@@ -19,10 +19,10 @@ export function NewsPage() {
 
     return (
         <div>
-            <header className={'page-title'}>
-                <h1>Market News <NewspaperIcon fontSize={"large"}/></h1>
-            </header>
+            <PageTitle h1={<h1>Market News <NewspaperIcon fontSize={"large"}/></h1>}
+                       p={<p>Daily market news without the fluff.</p>}/>
             <NewsList articles={articles}/>
         </div>
-    );
+    )
+        ;
 }

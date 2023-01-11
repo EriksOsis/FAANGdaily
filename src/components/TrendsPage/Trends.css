@@ -1,0 +1,42 @@
+.trend-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+}
+
+.trend-item-container {
+    width: 10vw;
+    height: auto;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+}
+
+.trend-item {
+    margin: 0;
+    font-size: 1.5vw;
+}
+
+.s-buy {
+    background-color: #3e8852;
+}
+
+.buy {
+    background-color: #2e673c;
+}
+
+.hold {
+    background-color: #8d8d2b;
+}
+
+.sell {
+    background-color: #880c0c;
+}
+
+.s-sell {
+    background-color: #b60505;
+}

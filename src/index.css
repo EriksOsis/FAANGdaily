@@ -1,12 +1,13 @@
 body {
     margin: 0;
-    font-family: 'Roboto', serif;
+    font-family: 'Trebuchet MS', serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #2a2e39;
     width: 100vw;
     height: 100vh;
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 code {

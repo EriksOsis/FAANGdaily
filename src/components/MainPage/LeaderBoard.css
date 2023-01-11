@@ -1,6 +1,6 @@
 .container {
     margin: 1rem 3rem 0;
-    padding: 8rem 0 10rem;
+    padding: 3.5rem 0 10rem;
     width: auto;
     height: auto;
     background-color: #131722;
@@ -13,65 +13,74 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 3rem;
+    gap: 2.4rem;
+
 }
 
-.cards div {
+.cards > div {
     border-radius: 9px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    overflow: hidden;
 }
 
-.cards div:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
+/* STYLES FOR META CARD*/
 
 .item1 {
-    background-image: linear-gradient(to right bottom, #000000, #050505, #0a0a0a, #0e0e0e, #121212);
-}
-
-.item2 {
-    background-image: linear-gradient(to right bottom, #181818, #141414, #0e0e0e, #080808, #000000);
-}
-
-.item2 .title {
-    font-family: 'Bebas Neue', serif;
-    color: #E50914;
-}
-
-.item3 {
     background: #f6f6f6;
 }
 
-.item3 .title {
-    font-family: 'Roboto', serif;
-    color: #0668E1;
+.item1 .card-top, .item1 .company-news-link {
+    background-color: #0668E1;
+    color: #f6f6f6;
 }
 
-.item3 .price {
-    color: #0668E1;
-    font-family: 'Roboto', serif;
+/* STYLES FOR APPLE CARD*/
+
+.item2 {
+    background-color: #050505;
 }
+
+.item2 .card-top, .item2 .company-news-link {
+    background-color: #f6f6f6;
+    color: #050505;
+}
+
+/*STYLES FOR AMAZON CARD*/
+
+.item3 {
+    background: #050505;
+}
+
+.item3 .card-top, .item3 .company-news-link {
+    background-color: #FF9900;
+    font-family: 'Amazon Ember', sans-serif;
+    color: #050505;
+}
+
+/*STYLES FOR NETFLIX CARD*/
 
 .item4 {
+    background-color: #E50914;
+}
+
+.item4 .card-top, .item4 .company-news-link {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #E50914;
+    background-color: #050505;
+}
+
+.item4 .red, .item4 .green {
+    color: #050505;
+}
+
+/*STYLES FOR GOOGLE CARD*/
+
+.item5 {
     background: #EEEEEE;
 }
 
-.item4 .title {
+.item5 .card-top, .item5 .company-news-link {
     color: #333;
     font-family: 'Product Sans', serif;
 }
 
-.item4 .price {
-    color: #333;
-}
-
-.item5 {
-    background: #000000;
-}
-
-.item5 .title {
-    font-family: 'Amazon Ember', sans-serif;
-    color: #FF9900;
-}
 

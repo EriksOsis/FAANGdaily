@@ -5,6 +5,7 @@ import {Nav} from "./components/UI/Nav";
 import {NewsPage} from "./components/NewsPage/NewsPage";
 import {TrendsPage} from "./components/TrendsPage/TrendsPage";
 import {InsiderPage} from "./components/InsiderPage/InsiderPage";
+import {CompanyNews} from "./components/CompanyNews/CompanyNews";
 
 function App() {
     return (
@@ -12,10 +13,17 @@ function App() {
             <div className={'App'}>
                 <Nav/>
                 <Route path={'/'} exact>
+                    <header className={'main-title'}>
+                        <h1>Trading Stars</h1>
+                        <p>No charts. Only important information.</p>
+                    </header>
                     <LeaderBoard/>
                 </Route>
                 <Route path={'/news'} exact>
                     <NewsPage/>
+                </Route>
+                <Route path={'/company-news/:symbol'}>
+                    <CompanyNews/>
                 </Route>
                 <Route path={'/trends'} exact>
                     <TrendsPage/>
