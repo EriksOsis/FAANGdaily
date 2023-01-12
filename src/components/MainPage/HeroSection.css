@@ -1,13 +1,57 @@
 .container {
     margin: 1rem 3rem 0;
-    padding: 3.5rem 0 10rem;
+    padding: 3.5rem 3.5rem 10rem;
     width: auto;
     height: auto;
     background-color: #131722;
     display: grid;
-    gap: 10rem;
+    gap: 7.5rem;
     place-items: center;
     border-radius: 9px;
+}
+
+.description-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+    animation: appear-up 1s;
+}
+
+
+@keyframes appear-up  {
+    from {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-heading {
+    font-size: 2.4rem;
+    line-height: 1.05;
+    margin-bottom: 3.5rem;
+}
+
+.color-gold {
+    color: #c89a40;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.hero-img {
+    width: 30rem;
+    height: auto;
+}
+
+.hero-btn {
+    text-decoration: none;
 }
 
 .cards {

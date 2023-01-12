@@ -6,7 +6,7 @@ export function Trends(props) {
     return (
         <div>{trends.map(trend =>
             <ul className={'trend-container'} key={`${trend.symbol}${trend.period}`}>
-                <li>
+                <li className={'period'}>
                     <p>{trend.period}</p>
                 </li>
                 <li className={'trend-item-container s-buy'}>

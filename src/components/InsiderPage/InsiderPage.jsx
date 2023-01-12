@@ -5,16 +5,7 @@ export function InsiderPage() {
     // const [symbol, setSymbol] = useState('TSLA');
     const [transactions, setTransactions] = useState({});
 
-    // useEffect(() => {
-    //     fetch(`https://finnhub.io/api/v1/stock/insider-transactions?symbol=AAPL&limit=20&token=c83cnhiad3ift3bm6ue0`)
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             setTransactions(data);
-    //         })
-    //         .catch(error => {
-    //             return <p>{error}</p>;
-    //         });
-    // }, []);
+
 
     useEffect(() => {
         const fetchData = async () => {
@@ -27,12 +18,12 @@ export function InsiderPage() {
 
         fetchData();
     }, []);
-    //todo create custom hook useFetch() and update all other components
 
     console.log(transactions);
     return (
         <div>
-            <Transaction transactions={transactions}/>
+            {/*<Transaction transactions={transactions}/>*/}
+            {/*{transactions.data.map(transactions => transactions.id)}*/}
         </div>
 
     )

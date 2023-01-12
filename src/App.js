@@ -1,5 +1,5 @@
 import './App.css';
-import {LeaderBoard} from "./components/MainPage/LeaderBoard";
+import {HeroSection} from "./components/MainPage/HeroSection";
 import {Route, Switch} from "react-router-dom";
 import {Nav} from "./components/UI/Nav";
 import {NewsPage} from "./components/NewsPage/NewsPage";
@@ -7,18 +7,16 @@ import {TrendsPage} from "./components/TrendsPage/TrendsPage";
 import {InsiderPage} from "./components/InsiderPage/InsiderPage";
 import {CompanyNews} from "./components/CompanyNews/CompanyNews";
 import {Footer} from "./components/UI/Footer";
+import {ScrollToTopOnMount} from "./components/UI/ScrollToTopOnMount";
 
 function App() {
     return (
         <Switch>
             <div className={'App'}>
+                <ScrollToTopOnMount/>
                 <Nav/>
                 <Route path={'/'} exact>
-                    <header className={'main-title'}>
-                        <h1>Trading Stars</h1>
-                        <p>No charts. Only important information.</p>
-                    </header>
-                    <LeaderBoard/>
+                    <HeroSection/>
                 </Route>
                 <Route path={'/news'} exact>
                     <NewsPage/>

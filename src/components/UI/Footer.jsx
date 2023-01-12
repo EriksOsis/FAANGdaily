@@ -15,17 +15,17 @@ export function Footer() {
                              alt={'Trading Stars footer logo'}/>
                     </Link>
                     <ul className="social-links">
-                        <li><a href="#" className="footer-link">
+                        <li><a href="https://www.facebook.com" className="footer-link">
                             <FacebookIcon/>
                         </a></li>
-                        <li><a href="#" className="footer-link">
+                        <li><a href="https://www.instagram.com/eeriks_osis/" className="footer-link">
                             <InstagramIcon/>
                         </a></li>
-                        <li><a href="#" className="footer-link">
+                        <li><a href="https://twitter.com" className="footer-link">
                             <TwitterIcon/>
                         </a></li>
                     </ul>
-                    <p className="copyright">Copyright &copy; 2027 by Trading Stars Inc. All Rights Reserved</p>
+                    <p className="copyright">Copyright &copy; 2023 by Trading Stars Inc. All Rights Reserved</p>
                 </div>
                 <div className="address-col">
                     <p className="footer-heading">Contact Us</p>

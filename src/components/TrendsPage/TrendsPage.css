@@ -12,6 +12,10 @@
     place-items: center;
 }
 
+.label {
+    font-size: 1rem;
+}
+
 #filled-basic {
     color: #d1d4dc;
 }

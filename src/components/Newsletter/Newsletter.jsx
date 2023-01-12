@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 
 export function Newsletter() {
     return (
-        <div className={'newsletter-container'}>
+        <div className={'newsletter-container'} id={'newsletter'}>
             <div className={'cta'}>
                 <header className={'cta-text'}>
                     <h1>Become smarter in just 5 minutes</h1>
@@ -12,7 +12,7 @@ export function Newsletter() {
                 </header>
                 <form className={'cta-form'}>
                     <input className={'cta-input'} placeholder={'john.smith@email.com'}/>
-                    <Button variant="contained" color="secondary" className={'cta-form-btn'}>Subscribe</Button>
+                    <Button variant="contained" color="warning" className={'cta-form-btn'}>Subscribe</Button>
                 </form>
             </div>
             <div className={'cta-img-container'}>

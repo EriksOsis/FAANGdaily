@@ -3,7 +3,8 @@ export function Transaction(props) {
 
     return (
         <div>
-            {transactions.data.map(transaction => <p>{transaction.name}</p>)}
+            {transactions.symbol}
+            <div>{transactions.map(transaction => transaction.id)}</div>
         </div>
     )
 }
