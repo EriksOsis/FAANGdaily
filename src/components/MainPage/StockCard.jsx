@@ -18,11 +18,11 @@ export function StockCard(props) {
                 <CardTop numbers={numbers} symbol={props.symbol}/>
                 <div className={'card-bottom'}>
                     <p className={`percent ${numbers.dp < 0 ? 'red' : 'green'}`}>
-                        <MovingIcon fontSize={"medium"} className={numbers.dp < 0 && 'rotate'}/> {numbers.dp}%
+                        <MovingIcon fontSize={"medium"} className={numbers.dp < 0 && 'rotate'}/> {numbers.dp.toFixed(2)}%
                     </p>
-                    <p className={'high green'}><CandlestickChartIcon fontSize={"medium"}/> Today`s high: ${numbers.h}
+                    <p className={'high green'}><CandlestickChartIcon fontSize={"medium"}/> Today`s high: ${numbers.h.toFixed(2)}
                     </p>
-                    <p className={'low red'}><CandlestickChartIcon fontSize={"medium"}/> Today`s low: ${numbers.l}</p>
+                    <p className={'low red'}><CandlestickChartIcon fontSize={"medium"}/> Today`s low: ${numbers.l.toFixed(2)}</p>
                     <Link to={`/company-news/${props.symbol}`} className={'company-news-link'}>Company news</Link>
                 </div>
             </div>

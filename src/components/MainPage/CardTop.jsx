@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import {useFetchData} from "../../hooks/useFetchData";
-import {Loader} from "../UI/Loader";
 import './StockCard.css';
 import CircularProgress from '@mui/material/CircularProgress';
 
@@ -16,7 +15,7 @@ export const CardTop = (props) => {
             <img className={'card-logo'} src={stock.logo} alt={stock.name + 'logo'}/>
             <p className={'title'}>{stock.name}</p>
             <div>
-                <p className={'price'}>${props.numbers.c}</p>
+                <p className={'price'}>${props.numbers.c.toFixed(2)}</p>
             </div>
         </div>
     )

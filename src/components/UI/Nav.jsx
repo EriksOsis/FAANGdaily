@@ -16,6 +16,10 @@ export function Nav() {
         setMobileMenu(false);
     }
 
+    function linkDisabler(event) {
+        event.preventDefault();
+    }
+
     return (
         <nav className={'header'}>
             <div className={'menu'}>
@@ -31,7 +35,8 @@ export function Nav() {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink onClick={mobileMenuCLoser} to={'/insider-info'} exact className={'menu-option'}>
+                        <NavLink onClick={linkDisabler} to={'/insider-info'} exact
+                                 className={'menu-option disabled'}>
                             Insider Info
                         </NavLink>
                     </li>
@@ -42,7 +47,6 @@ export function Nav() {
                         <CloseIcon variant={'large'} sx={{color: '#2962ff', fontSize: '3rem'}}
                                    onClick={mobileMenuHandler}/>}
                 </button>
-
             </div>
             <div className={'logo'} onClick={mobileMenuCLoser}>
                 <Link to={'/'}>

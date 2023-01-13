@@ -4,7 +4,6 @@ import {Route, Switch} from "react-router-dom";
 import {Nav} from "./components/UI/Nav";
 import {NewsPage} from "./components/NewsPage/NewsPage";
 import {TrendsPage} from "./components/TrendsPage/TrendsPage";
-import {InsiderPage} from "./components/InsiderPage/InsiderPage";
 import {CompanyNews} from "./components/CompanyNews/CompanyNews";
 import {Footer} from "./components/UI/Footer";
 import {ScrollToTopOnMount} from "./components/UI/ScrollToTopOnMount";
@@ -26,9 +25,6 @@ function App() {
                 </Route>
                 <Route path={'/trends'} exact>
                     <TrendsPage/>
-                </Route>
-                <Route path={'/insider-info'} exact>
-                    <InsiderPage/>
                 </Route>
                 <Footer/>
             </div>
