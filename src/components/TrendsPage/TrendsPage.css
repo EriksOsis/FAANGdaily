@@ -1,6 +1,8 @@
 .trend-page {
     display: grid;
     place-items: center;
+    width: 100vw;
+    height: auto;
 }
 
 .trend-content {
@@ -26,11 +28,28 @@
 }
 
 .trend-form {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
 }
 
 .form-button {
-    max-height: 4.5rem;
+    max-height: 3rem;
+}
+
+@media (max-width: 40em) {
+    .trend-content {
+        width: 85vw;
+    }
+
+    .label {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 23.75em) {
+    .label {
+        font-size: .6rem;
+    }
 }

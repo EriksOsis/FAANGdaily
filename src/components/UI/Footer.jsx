@@ -35,7 +35,6 @@ export function Footer() {
                         <p><a href="mailto:info@tradingstars.com" className="footer-link">info@tradingstars.com</a></p>
                     </address>
                 </div>
-
                 <nav className="nav-col">
                     <p className="footer-heading">Account</p>
                     <ul className="footer-nav">

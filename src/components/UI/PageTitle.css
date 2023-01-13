@@ -1,10 +1,10 @@
 .page-title {
-    margin: 0 auto;
     display: grid;
     place-items: center;
     font-size: 1.6rem;
     row-gap: 1rem;
     animation: appear 1s;
+    width: 100vw;
 }
 
 .page-title h1 {
@@ -22,5 +22,11 @@
 
     to {
         opacity: 1;
+    }
+}
+
+@media (max-width: 22.75em) {
+    .page-title p {
+        font-size: 1.2rem;
     }
 }

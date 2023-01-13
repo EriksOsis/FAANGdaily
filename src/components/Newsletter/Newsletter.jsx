@@ -12,7 +12,7 @@ export function Newsletter() {
                 </header>
                 <form className={'cta-form'}>
                     <input className={'cta-input'} placeholder={'john.smith@email.com'}/>
-                    <Button variant="contained" color="warning" className={'cta-form-btn'}>Subscribe</Button>
+                    <Button sx={{fontFamily: 'Trebuchet MS', fontSize: '1.2rem', textTransform: 'lowercase'}} variant="contained" color="warning" className={'cta-form-btn'}>Subscribe</Button>
                 </form>
             </div>
             <div className={'cta-img-container'}>

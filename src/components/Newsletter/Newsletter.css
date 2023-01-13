@@ -20,6 +20,7 @@
 }
 
 .cta-text h1 {
+    margin-top: 0;
     font-size: 2.2rem;
 }
 
@@ -61,4 +62,156 @@
     height: 100%;
     width: auto;
     transform: translateX(-50%);
+}
+
+@media (max-width: 86.31em) {
+    .cta-input, .cta-form-btn {
+        height: 60%;
+    }
+}
+
+@media (max-width: 78em) {
+    .cta-input, .cta-form-btn {
+        height: 80%;
+    }
+}
+
+@media (max-width: 76em) {
+    .cta-input, .cta-form-btn {
+        height: 100%;
+    }
+}
+
+@media (max-width: 75em) {
+    .cta-text h1 {
+        font-size: 3.2rem;
+    }
+
+    .cta-text p {
+        font-size: 2rem;
+    }
+
+    .cta-input, .cta-form-btn {
+        height: 70%;
+    }
+}
+
+@media (max-width: 64.62em) {
+    .cta-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .cta-text p {
+        font-size: 1.4rem;
+    }
+
+    .cta-input, .cta-form-btn {
+        height: 40%;
+    }
+}
+
+@media (max-width: 59.37em) {
+    .cta-input, .cta-form-btn {
+        height: 60%;
+    }
+}
+
+@media (max-width: 50.62em) {
+    .cta-text h1 {
+        font-size: 2rem;
+    }
+
+    .cta-text p {
+        font-size: 1.2rem;
+    }
+
+    .cta-input, .cta-form-btn {
+        height: 50%;
+    }
+}
+
+@media (max-width: 45.75em) {
+
+    .newsletter-container {
+        grid-template-columns: 1fr;
+        width: 75%;
+        grid-template-rows: 33% 67%;
+        height: 55rem;
+    }
+
+    .cta-img-container {
+        width: 100%;
+        grid-row: 1;
+    }
+
+    .cta-img {
+        transform: translateX(0%);
+        width: 100%;
+        height: auto;
+    }
+
+    .cta {
+        grid-row: 2;
+    }
+
+    .cta-text h1 {
+        font-size: 3rem;
+    }
+
+    .cta-text p {
+        font-size: 2rem;
+    }
+
+    .cta-input {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 37.93em) {
+    .cta-img {
+        width: auto;
+        height: 100%;
+    }
+
+    .cta-input {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 27.93em) {
+    .cta-text p {
+        font-size: 1.6rem;
+    }
+
+    .cta-text h1 {
+         font-size: 2.8rem;
+     }
+
+    .cta-form {
+        height: 70%;
+    }
+
+    .cta-input {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 26.68em) {
+    .cta-input {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 25.5em) {
+    .cta-text p {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media (max-width: 24.1em) {
+    .cta-input {
+        font-size: .8rem;
+    }
 }

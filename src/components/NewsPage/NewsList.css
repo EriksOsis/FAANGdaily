@@ -1,15 +1,22 @@
+.newslist-container {
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
 .article-list {
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: .8rem;
+    grid-template-columns: 26vw 26vw 26vw;
+    gap: 5rem;
+    padding: 0;
 }
 
 .article-item {
     background-color: #131722;
     list-style: none;
     padding: .8rem;
-    width: 26vw;
+    width: 100%;
     border-radius: 9px;
     animation: appear-up 1s;
     cursor: pointer;
@@ -67,4 +74,29 @@
 .article-datetime {
     font-size: .8rem;
     margin: 0;
+}
+
+@media (max-width: 48.31em) {
+    .article-list {
+        grid-template-columns: 40vw 40vw;
+        row-gap: 1.4rem;
+    }
+
+    .article-item {
+        width: 40vw;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 44.87em) {
+    .article-list {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .article-item {
+        width: 80vw;
+        padding: 2rem;
+    }
+
 }

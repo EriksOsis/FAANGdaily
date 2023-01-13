@@ -1,32 +1,60 @@
 import './Nav.css';
 import {Link, NavLink} from "react-router-dom";
+import {useState} from "react";
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+
 
 export function Nav() {
+    const [mobileMenu, setMobileMenu] = useState(false);
+
+    function mobileMenuHandler() {
+        setMobileMenu(!mobileMenu);
+    }
+
+    function mobileMenuCLoser() {
+        setMobileMenu(false);
+    }
+
     return (
         <nav className={'header'}>
             <div className={'menu'}>
-                <ul className={'menu-options'}>
+                <ul className={`menu-options  ${mobileMenu && 'menu-open'}`}>
                     <li>
-                        <NavLink to={'/news'} exact className={'menu-option'}>News</NavLink>
+                        <NavLink onClick={mobileMenuCLoser} to={'/news'} exact className={`menu-option`}>
+                            News
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink to={'/trends'} exact className={'menu-option'}>Trends</NavLink>
+                        <NavLink onClick={mobileMenuCLoser} to={'/trends'} exact className={'menu-option'}>
+                            Trends
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink to={'/insider-info'} exact className={'menu-option'}>Insider Info</NavLink>
+                        <NavLink onClick={mobileMenuCLoser} to={'/insider-info'} exact className={'menu-option'}>
+                            Insider Info
+                        </NavLink>
                     </li>
                 </ul>
+                <button className={'mobile-menu'}>
+                    {!mobileMenu ? <MenuIcon variant={'large'} sx={{color: '#2962ff', fontSize: '3rem'}}
+                                             onClick={mobileMenuHandler}/> :
+                        <CloseIcon variant={'large'} sx={{color: '#2962ff', fontSize: '3rem'}}
+                                   onClick={mobileMenuHandler}/>}
+                </button>
+
             </div>
-            <div className={'logo'}>
+            <div className={'logo'} onClick={mobileMenuCLoser}>
                 <Link to={'/'}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="75"
-                         zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="75"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                         zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="100%"
                          preserveAspectRatio="xMidYMid meet"
                          version="1.0">
                         <defs>
                             <clipPath id="3fba93d567">
-                                <path d="M 0 51.511719 L 375 51.511719 L 375 323.761719 L 0 323.761719 Z M 0 51.511719 "
-                                      clipRule="nonzero"/>
+                                <path
+                                    d="M 0 51.511719 L 375 51.511719 L 375 323.761719 L 0 323.761719 Z M 0 51.511719 "
+                                    clipRule="nonzero"/>
                             </clipPath>
                         </defs>
                         <g clipPath="url(#3fba93d567)">
